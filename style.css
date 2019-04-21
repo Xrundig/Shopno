@@ -1,0 +1,698 @@
+html, body{
+	height: 100%;
+	width: 100%;
+}
+body{
+	margin: 0;
+	display: flex;
+	justify-content: center;
+}
+.main{
+	width: 980px;
+	height: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	align-self: center;
+	user-select: none;
+}
+.header{
+	width: 100%;
+	height: calc(100% - 100px);
+	background: rgb(239,240,242);
+	position: relative;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+@font-face{
+	font-family: Montserrat;
+	src: url(fonts/Montserrat/Montserrat-Bold.ttf);
+}
+@font-face{
+	font-family: MontserratLight;
+	src: url(fonts/Montserrat/Montserrat-ExtraLight.ttf);
+}
+@font-face{
+	font-family: MerriweatherBold;
+	src: url(fonts/Merriweather/Merriweather-Bold.ttf);
+}
+@font-face{
+	font-family: MerriweatherRegular;
+	src: url(fonts/Merriweather/Merriweather-Regular.ttf);
+}
+@font-face{
+	font-family: RalewayRegular;
+	src: url(fonts/Raleway/Raleway-Regular.ttf);
+}
+@font-face{
+	font-family: RalewayMedium;
+	src: url(fonts/Raleway/Raleway-Medium.ttf);
+}
+.header_logo{
+	width: 75px;
+	height: 25px;
+	border: 3px solid rgb(23,15,28);
+	position: absolute;
+	top: 25px;
+	left: 5%;
+	line-height: 25px;
+	text-align: center;
+	font-family: Montserrat;
+	font-size: 12px;
+}
+.turquoise{
+	color:rgb(119,239,229);
+	font-size: 15px;
+}
+.header_menu{
+	width: 30px;
+	height: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	position: absolute;
+	top: 25px;
+	left: 90%;
+}
+.header_menu_line{
+	width: 25px;
+	height: 3px;
+	background: rgb(96,96,97);	
+}
+.header_greeting{
+	width: 100%;
+	font-family: Montserrat;
+	font-size: 30px;
+	color: rgb(80,80,80);
+	text-align: center;
+}
+.fill{
+	background:rgb(178,242,238);
+}
+.header_contact{
+	width: 180px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	border: 2px solid rgb(119,120,121);
+	font-family: MontserratLight;
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(60,60,61);
+	margin-top: 100px;
+}
+.header_picture{
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	bottom: 25px;
+	right: 5%;
+	background: rgb(239,240,242); 
+}
+.header_picture_coaster{
+	width: 100%;
+	height: 100%;
+	background: url(pictures/coaster.png);
+	background-repeat: no-repeat;
+	background-size: contain; 	
+}
+.header_picture_glass{
+	width: 150%;
+	height: 150%;
+	background: url(pictures/glass.png);
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	top:-75px;
+}
+.about{
+	width: 100%;
+	height: 100%;
+	background: rgb(248,250,250);	
+}
+.about_head{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-family: Montserrat;
+	color:black;
+	font-size: 30px;
+}
+.about_headsmaller{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 15px;
+	color: rgb(94,95,95)
+}
+.about_main{
+	width: 80%;
+	height: calc(100% - 250px);
+	display: flex;
+	justify-content: center;
+	position: relative;
+	margin: 0 auto;
+}
+.about_main_example{
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+
+.about_main_example_leftshadow{
+	width: 10%;
+	height: 50%;
+	background: rgb(236,237,239);
+}
+.about_main_example_rightshadow{
+	width: 10%;
+	height: 50%;
+	background: rgb(236,237,239);
+}
+.about_main_example_item{
+	width: 60%;
+	height: 70%;
+	background-image:url(pictures/computer.png);
+	background-size: cover;
+	position: relative;
+	background-repeat: no-repeat;
+}
+.about_main_example_navigation{
+	width: 50%;
+	height: 20px;
+	text-align: center;
+	position: absolute;
+	bottom: 5%;
+	left: 0px;
+}
+.about_main_example_navigation_elem{
+	width: 8px;
+	height: 8px;
+	border-radius: 3px;
+	background: rgb(208,208,208);
+	display: inline-block;
+}
+.about_main_words{
+	width:50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	text-align: center;
+	flex-grow: 0;
+	flex-shrink: 0;
+}
+.about_main_words_text{
+	height: 70%;
+	width: 80%;
+	font-family: RalewayRegular;
+	color:rgb(157,158,158);
+	font-size: 1.5vh;
+	letter-spacing: 0.1em;
+	line-height: 1.5em;
+	text-align: left;
+}
+.Merriweather{
+	font-family:MerriweatherBold;
+	color: rgb(62,63,63);
+	font-size: 1.8vh;
+}
+.works{
+	width: 100%;
+	height: 100%;
+}
+.works_head{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-family: Montserrat;
+	color:black;
+	font-size: 30px;
+}
+.works_headsmaller{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 15px;
+	color: rgb(94,95,95)
+}
+.works_main{
+	width: 100%;
+	height: calc(100% - 150px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.works_main_grid{
+	width: 78%;
+	height: 80%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-column-gap: 10px;
+	grid-row-gap: 10px;
+}
+.works_main_grid_example{
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.works_main_grid_example:hover{
+	opacity:0.5;
+	cursor: pointer;
+}
+.service{
+	width: 100%;
+	height: 120%;
+	background: rgb(249,251,251);
+}
+.service_head{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	font-family: Montserrat;
+	color:black;
+	font-size: 30px;
+}
+.service_headsmaller{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	font-size: 15px;
+	color: rgb(94,95,95)
+}
+.service_main{
+	width: 100%;
+	height: calc(100% - 150px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+.service_main_grid{
+	width: 80%;
+	height: 90%;
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-template-rows: 1.2fr 1fr 1fr;
+	grid-template-areas: 
+		"g0 g0 g0 g0 g0 g0 g0 g1 g1 g1 g1 g1"
+		"g2 g2 g2 g2 g2 g2 g2 g3 g3 g3 g3 g3"
+		"g4 g4 g4 g4 g4 g5 g5 g5 g5 g5 g5 g5";
+	grid-gap: 5px;
+}
+.service_main_grid_example{
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	color: rgb(246,246,246);
+}
+.service_main_grid_example_text{
+	height: 80%;
+	width: 80%;
+	font-family: MerriweatherBold;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;	
+}
+.service_example_RalewayRegular{
+	font-family: RalewayRegular;
+}
+.service_main_grid_example_shadow{
+	background: rgba(0,0,0,0.5);
+	height: 100%;
+	width: 100%;
+	color:white;
+	font-size: 120%;
+	
+}
+.service_main_grid_example:hover .service_main_grid_example_shadow{
+	display: none;
+}
+.service_main_grid_example:hover{
+	color:black;
+}
+.service_main_grid_example:hover .service_main_grid_example_shadow_refer_rarrow{
+	border-left: 5px solid black;
+}
+.service_main_grid_example_shadow_refer{
+	color: inherit;
+	text-decoration: none;
+	font-family: RalewayMedium;
+}
+.service_main_grid_example_shadow_refer_rarrow{
+	width: 0; 
+	height: 0; 
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+	border-left: 5px solid white;
+	margin-left: 10px;
+	display: inline-block;
+}
+.service_main_grid_example_details{
+	width: calc(100% - 60px);
+	height: calc(100% - 60px);
+	background: rgb(113,246,235);
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	padding: 30px;
+}
+.service_main_grid_example_details_cclose{
+	color: black;
+	font-size: 200%;
+	position: absolute;
+	bottom: 5%;
+	cursor: pointer;
+}
+.team{
+	height: 120%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	/* text-overflow: hidden; */
+}
+.team_space{
+	width: 100%;
+	height: 50px;
+
+}
+.team_header{
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	font-size: 15px;
+	color: rgb(94,95,95);
+	flex-wrap: wrap;
+}
+.team_header_Montserrat{
+	font-family: Montserrat;
+	color:black;
+	font-size: 30px;
+}
+.team_main{
+	width: 80%;
+	height: calc(100% - 300px);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 5px;
+}
+.team_main_worker{
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.team_main_worker:hover .team_main_worker_descr{
+	display: flex;
+}
+.team_main_worker:hover .team_main_worker_descr_box{
+	display: block;
+}
+.team_main_worker_descr{
+	width: 90%;
+	height: 50%;
+	background: rgb(112,246,235);
+	position: relative;
+	bottom: 5%;
+	font-family: RalewayRegular;
+	font-size: 80%;
+	/* display: flex; */
+	justify-content: center;
+	align-items: center;
+	display: none;
+}
+.team_main_worker_descr_box{
+	width: 80%;
+	height: 70%;
+}
+.team_main_worker_descr_MerriweatherBold{
+	font-family: MerriweatherBold;
+}
+.team_main_worker_descr_MerriweatherRegular{
+	font-family: MerriweatherRegular;
+	font-style: italic;
+}
+.team_main_worker_descr_box_social{
+	width: 100%;
+	height: 20%;
+	display: flex;
+	align-self: flex-end;
+}
+.box_social_item{
+	width: 24px;
+	height: 24px;
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	cursor: pointer;
+}
+.team_main_worker_descr_triangle{
+	width: 0; 
+	height: 0; 
+	border-bottom: 14px solid rgb(112,246,235);
+	border-right: 7px solid transparent;
+	border-left: 7px solid transparent;
+	position: absolute;
+	top: -14px;
+	left: 10px;
+}
+.what{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: flex-start;
+	background: rgb(249,249,251);
+}
+.what_space{
+	width: 100%;
+	height: 50px;
+
+}
+.what_header{
+	width: 100%;
+	height: 100px;
+	text-align: center;
+	font-size: 15px;
+	color: rgb(94,95,95);
+	flex-wrap: wrap;
+}
+.what_header_Montserrat{
+	font-family: Montserrat;
+	color:black;
+	font-size: 30px;
+}
+.what_main{
+	width: 80%;
+	height: calc(100% - 200px);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-evenly;
+}
+.what_main_left{
+	width: 30%;
+	height: 40%;
+	background: yellow;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(234,235,237);
+}
+.what_main_left_pict{
+	width: 80%;
+	height: 120%;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.what_main_right{
+	width: 60%;
+	height: 40%;
+	background-color: rgb(234,235,237);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;	
+}
+.what_main_right_descr{
+	width: 80%;
+	height: 70%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	font-family: RalewayRegular;
+	text-align: center;
+}
+.what_main_right_descr_MerriweatherBold{
+	font-family: MerriweatherBold;
+}
+.what_main_right_descr_descr_MerriweatherRegular{
+	font-family: MerriweatherRegular;
+	font-style: italic;
+}
+.what_main_navigation{
+	width: 30%;
+	height: 50px;
+	margin-top: -5%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+}
+.what_main_navigation_elem{
+	width: 8px;
+	height: 8px;
+	border-radius: 3px;
+	background: rgb(208,208,208);
+	display: inline-block;
+	margin-left: 3px;
+	cursor: pointer;
+}
+.what_main_buttons{
+	width: 60%;
+	height: 50px;
+	margin-top: -5%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+}
+.what_main_buttons_elem{
+	width: 3em;
+	height: 3em;
+	background-color: white;
+	margin-left: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.what_main_buttons_elem_arrow{
+	width: 1em;
+	height: 1em;
+	border-left: 5px solid rgb(37,81,77);
+	border-top: 5px solid rgb(37,81,77);
+	
+}
+.left{
+	transform: translate(5px) rotate(-45deg) ;
+}
+.right{
+	transform: translate(-5px) rotate(135deg)
+}
+.logo{
+	width: 100%;
+	height: 30%;
+	background-image: url("pictures/logo.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+}
+.address{
+	width: 100%;
+	height: 50%;
+	background-image: url("pictures/forest.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 100%;
+	position: relative;
+}
+.address-filter{
+	width: 100%;
+	height: 100%;
+	background-color: white;
+	opacity: 0.8;
+}
+.address-container{
+	width: 80%;
+	height: 60%;
+	position: absolute;
+	top: 20%;
+	left: 10%;
+	display: flex;
+	justify-content: space-between;
+}
+.address-container-form{
+	width: 54%;
+	height: 100%;
+	background-color: rgba(73,88,98,0.9);
+	box-sizing: border-box;
+	padding: 2%;
+	position: relative;
+
+}
+.address-field{
+	width: 100%;
+	height: 15%;
+	border:none;
+	border-bottom: 1px solid rgb(109,121,129);
+	outline: none;
+	background-color: transparent;
+	color: rgb(153,161,167);
+	font-family: Verdana;
+}
+::placeholder{
+	color: rgb(153,161,167);
+	font-family: Verdana;
+}
+.address-block{
+	width: 100%;
+	height: 25%;
+	border: none;
+	border-bottom: 1px solid rgb(109,121,129);
+	outline: none;
+	background-color: transparent;
+	color: rgb(153,161,167);
+	font-family: Verdana;
+}
+
+.address-button{
+	width: 40%;
+	height: 15%;
+	font-family: MontserratRegular;
+	background-color: rgb(110,238,228);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	margin-top: 2%;
+}
+.address-container-contact{
+	width: 42%;
+	height: 100%;
+	background-color: rgba(73,88,98,0.9);
+	box-sizing: border-box;
+	padding: 2%;
+
+}
+.address-container-contact-details{
+	width: 100%;
+	height: 45%;
+	color: rgb(153,161,167);
+	font-family: Verdana;
+	font-size: 60%;
+}
+
